@@ -1,0 +1,106 @@
+import { Crop } from '../types';
+
+export const crops: Crop[] = [
+  {
+    id: 'rice',
+    name: 'Rice',
+    category: 'Cereal',
+    emoji: '🌾',
+    waterNeeds: 'high',
+    growingSeason: 'Kharif (June–Nov)',
+    soilTypes: ['Clay', 'Loamy', 'Silty'],
+    description: 'Staple crop requiring flooded conditions. Best in warm, humid climates.',
+  },
+  {
+    id: 'tomato',
+    name: 'Tomato',
+    category: 'Vegetable',
+    emoji: '🍅',
+    waterNeeds: 'medium',
+    growingSeason: 'Year-round (subtropical)',
+    soilTypes: ['Loamy', 'Sandy loam'],
+    description: 'Popular fruit vegetable. Sensitive to temperature extremes and humidity.',
+  },
+  {
+    id: 'maize',
+    name: 'Maize (Corn)',
+    category: 'Cereal',
+    emoji: '🌽',
+    waterNeeds: 'medium',
+    growingSeason: 'Kharif & Rabi',
+    soilTypes: ['Loamy', 'Sandy loam', 'Clay loam'],
+    description: 'Versatile cereal crop. Grown globally for food, feed, and industry.',
+  },
+  {
+    id: 'wheat',
+    name: 'Wheat',
+    category: 'Cereal',
+    emoji: '🌾',
+    waterNeeds: 'low',
+    growingSeason: 'Rabi (Oct–Mar)',
+    soilTypes: ['Loamy', 'Clay loam', 'Silty'],
+    description: 'Cool-season crop. One of the world\'s most important food grains.',
+  },
+  {
+    id: 'potato',
+    name: 'Potato',
+    category: 'Tuber',
+    emoji: '🥔',
+    waterNeeds: 'medium',
+    growingSeason: 'Rabi (Oct–Feb)',
+    soilTypes: ['Sandy loam', 'Loamy', 'Silty loam'],
+    description: 'High-yielding tuber crop. Sensitive to frost and waterlogging.',
+  },
+  {
+    id: 'cotton',
+    name: 'Cotton',
+    category: 'Cash Crop',
+    emoji: '🌿',
+    waterNeeds: 'medium',
+    growingSeason: 'Kharif (Apr–Nov)',
+    soilTypes: ['Black cotton soil', 'Loamy', 'Sandy loam'],
+    description: 'Major cash crop. Requires long warm seasons and moderate rainfall.',
+  },
+  {
+    id: 'soybean',
+    name: 'Soybean',
+    category: 'Legume',
+    emoji: '🌱',
+    waterNeeds: 'medium',
+    growingSeason: 'Kharif (June–Oct)',
+    soilTypes: ['Loamy', 'Clay loam', 'Sandy loam'],
+    description: 'Nitrogen-fixing legume. Excellent rotation crop with cereals.',
+  },
+];
+
+export const soilTypes = [
+  { value: 'loamy', label: 'Loamy' },
+  { value: 'clay', label: 'Clay' },
+  { value: 'sandy', label: 'Sandy' },
+  { value: 'sandy_loam', label: 'Sandy Loam' },
+  { value: 'clay_loam', label: 'Clay Loam' },
+  { value: 'silty', label: 'Silty' },
+  { value: 'black', label: 'Black Cotton Soil' },
+];
+
+export const seasons = [
+  { value: 'summer', label: 'Summer (Mar–Jun)' },
+  { value: 'monsoon', label: 'Monsoon (Jul–Sep)' },
+  { value: 'autumn', label: 'Autumn (Oct–Nov)' },
+  { value: 'winter', label: 'Winter (Dec–Feb)' },
+];
+
+export const cityWeatherPresets: Record<string, { temperature: number; humidity: number; rainfall: number; windSpeed: number }> = {
+  'Delhi': { temperature: 32, humidity: 55, rainfall: 8, windSpeed: 14 },
+  'Mumbai': { temperature: 29, humidity: 82, rainfall: 45, windSpeed: 18 },
+  'Chennai': { temperature: 34, humidity: 78, rainfall: 12, windSpeed: 16 },
+  'Kolkata': { temperature: 31, humidity: 80, rainfall: 30, windSpeed: 12 },
+  'Bangalore': { temperature: 26, humidity: 65, rainfall: 5, windSpeed: 10 },
+  'Hyderabad': { temperature: 33, humidity: 60, rainfall: 10, windSpeed: 12 },
+  'Pune': { temperature: 28, humidity: 68, rainfall: 15, windSpeed: 11 },
+  'Ahmedabad': { temperature: 36, humidity: 48, rainfall: 3, windSpeed: 15 },
+  'Lucknow': { temperature: 30, humidity: 62, rainfall: 5, windSpeed: 10 },
+  'Patna': { temperature: 29, humidity: 70, rainfall: 20, windSpeed: 9 },
+  'Jaipur': { temperature: 35, humidity: 42, rainfall: 2, windSpeed: 16 },
+  'Bhopal': { temperature: 30, humidity: 65, rainfall: 18, windSpeed: 11 },
+};
