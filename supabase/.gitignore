@@ -1,0 +1,7 @@
+# Supabase local dev
+.branches
+.cli
+supabase/migrations/.temp/
+*.db
+*.db-shm
+*.db-wal
